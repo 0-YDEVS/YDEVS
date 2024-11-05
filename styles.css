@@ -795,100 +795,6 @@ h2::after {
 }
 
 
-#testimonials {
-    background: linear-gradient(135deg, #0073e6, #005bb5);
-    color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-.testimonial-list {
-    display: flex;
-    gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    transition: transform 0.5s ease;
-    animation: fadeIn 1s ease-in-out;
-    width: 100%;
-}
-
-.testimonial {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    min-width: 100%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.author {
-    font-style: italic;
-    margin-top: 10px;
-    color: #ddd;
-}
-
-#testimonials h2 {
-    font-size: 36px;
-    color: #fff;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-#testimonials h2::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: #fff;
-    margin: 10px auto 0;
-    border-radius: 2px;
-}
-
-.testimonial:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
-}
-
-/* Navigation buttons */
-#testimonials .nav-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.3);
-    color: #fff;
-    font-size: 24px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-#testimonials .nav-button:hover {
-    background: rgba(255, 255, 255, 0.5);
-}
-
-#testimonials .nav-button.left {
-    left: 10px;
-}
-
-#testimonials .nav-button.right {
-    right: 10px;
-}
-
-
-.author {
-    font-style: italic;
-    margin-top: 10px;
-    color: #ddd;
-}
-
-
-
 
 input, textarea {
     padding: 12px;
@@ -984,4 +890,54 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
