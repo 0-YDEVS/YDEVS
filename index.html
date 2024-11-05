@@ -28,14 +28,13 @@
         <span class="logo-text">YDevs</span>
       </a>
 
-      <div class="menu-toggle" >&#9776;</div>
+      <div class="menu-toggle">&#9776;</div>
       <nav>
         <ul class="menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -81,6 +80,7 @@
         <a href="#contact" class="btn contact-btn">Contact Me</a>
       </section>
 
+      <!-- Projects Section -->
       <section id="projects" class="fade-in">
         <h2>Projects</h2>
         <div class="project-list">
@@ -89,11 +89,9 @@
             <h3>CarRental</h3>
             <p>
               A car rental platform offering a simple and intuitive interface
-              for users.
+              for <br />users.
             </p>
-            <a href="https://github.com/arsalaneyoussef/CarRental" class="btn"
-              >Learn More</a
-            >
+            <a href="#" class="btn">Learn More</a>
           </div>
           <div class="project">
             <img src="img/PRJ2.png" alt="PRINTING SOLUTIONS" />
@@ -102,27 +100,32 @@
               A printing solution service for professionals, combining quality
               and speed.
             </p>
-            <a
-              href="https://github.com/arsalaneyoussef/PrintingSolutions"
-              class="btn"
-              >Learn More</a
-            >
+            <a href="#" class="btn">Learn More</a>
           </div>
           <div class="project">
             <img src="img/PRJ3.png" alt="CHOCOLATE DELIGHT" />
             <h3>CHOCOLATE DELIGHT</h3>
             <p>
               An online platform dedicated to ordering and selling gourmet
-              chocolates.
+              <br />chocolates.
             </p>
-            <a
-              href="https://github.com/arsalaneyoussef/ChocolateDelight"
-              class="btn"
-              >Learn More</a
-            >
+            <a href="#" class="btn">Learn More</a>
           </div>
         </div>
       </section>
+
+      <!-- Modal for Projects -->
+      <div id="projectModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img id="projectImage" src="" alt="Project Screenshot" />
+          <h3 id="projectTitle">Project Title</h3>
+          <p id="projectDescription">Project Description</p>
+          <a id="projectLink" href="#" target="_blank" class="btn"
+            >Visit Site</a
+          >
+        </div>
+      </div>
 
       <section id="skills" class="fade-in">
         <h2>Skills</h2>
@@ -160,39 +163,6 @@
             <p>WordPress</p>
           </div>
         </div>
-      </section>
-
-      <section id="testimonials" class="fade-in">
-        <h2>Testimonials</h2>
-        <div class="testimonial-list">
-          <div class="testimonial">
-            <p>
-              "ARSALANE provided us with a tailored solution. His
-              professionalism and responsiveness were highly appreciated!"
-            </p>
-            <p class="author">- Client A</p>
-          </div>
-          <div class="testimonial">
-            <p>
-              "A very enriching collaboration experience. His technical skills
-              are impressive."
-            </p>
-            <p class="author">- Client B</p>
-          </div>
-          <div class="testimonial">
-            <p>
-              "ARSALANE delivered a fast and reliable solution. His technical
-              knowledge is unmatched."
-            </p>
-            <p class="author">- Client C</p>
-          </div>
-        </div>
-        <button class="nav-button left" aria-label="Previous testimonial">
-          &lt;
-        </button>
-        <button class="nav-button right" aria-label="Next testimonial">
-          &gt;
-        </button>
       </section>
 
       <section id="contact" class="fade-in">
@@ -249,7 +219,7 @@
             <i class="fab fa-linkedin"></i>
           </a>
           <a
-            href="https://github.com/0-YDEVS"
+            href="https://github.com/Arsoo-003"
             target="_blank"
             rel="noopener"
             aria-label="GitHub profile of ARSALANE YOUSSEF"
